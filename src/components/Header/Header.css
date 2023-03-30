@@ -1,0 +1,20 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(16, 0, 32);
+  color: white;
+  padding: 0px 100px;
+}
+.header h1{
+  font-size: 34px;
+}
+.navs a{
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  padding-left: 20px;
+}
+.navs a:hover{
+  color: wheat;
+}
