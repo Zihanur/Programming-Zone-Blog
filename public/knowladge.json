@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "author-name": "Abdullah Mamun",
+    "title": "How to get your first job as a self-taught programmer",
+    "cover-img": "https://img.freepik.com/free-photo/rear-view-programmer-working-all-night-long_1098-18697.jpg?w=996&t=st=1680195454~exp=1680196054~hmac=abbc4400a44100f017d138ef61c6b4bb14824bdacc062402c14937aaeb22e683",
+    "author-img": "https://img.freepik.com/free-photo/portrait-arabian-saudi-sheikh-young-male-model-posing-looks-serious-calm_155003-23538.jpg?w=996&t=st=1680195988~exp=1680196588~hmac=939df66a0264e337858b2279735877ef451a51ef5e04ea5b75c5a0d6e5643bc4",
+    "images": "",
+    "read-time": 5,
+    "publish-date": "12/2/23"
+  },
+  {
+    "id": 2,
+    "author-name": "Aminullah Aman",
+    "title": "How to get your first job as a self-taught programmer",
+    "cover-img": "https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010127.jpg?w=996&t=st=1680195652~exp=1680196252~hmac=1d2a2180ac350cd30792eb5a9420e42083369f17f5405bf7998cfc5d31cb282d",
+    "author-img": "https://img.freepik.com/premium-photo/portrait-muslim-man_53876-68959.jpg?w=900",
+    "images": "",
+    "read-time": 7,
+    "publish-date": "11/2/23"
+  },
+  {
+    "id": 3,
+    "author-name": "Mohammad Zihan",
+    "title": "How to get your first job as a self-taught programmer",
+    "cover-img": "https://img.freepik.com/free-photo/problem-solving-concept-with-books_23-2149908701.jpg?w=996&t=st=1680196269~exp=1680196869~hmac=7b20eb3dff2bbc5e27af2c6d84394868981d18bbee4b8f1adc27dc9bf1c9ab03",
+    "author-img": "https://img.freepik.com/free-photo/business-man-by-skyscraper_1303-13655.jpg?w=996&t=st=1680196120~exp=1680196720~hmac=c9cb9b51ae487d8201d367204e7f678cd3ce21c26478ce4e20da70260aa1d614",
+    "images": "",
+    "read-time": 9,
+    "publish-date": "10/12/23"
+  },
+  {
+    "id": 4,
+    "author-name": "Turala Fasek",
+    "title": "How to get your first job as a self-taught programmer",
+    "cover-img": "https://img.freepik.com/free-vector/robot-human_53876-90440.jpg?w=996&t=st=1680195791~exp=1680196391~hmac=6803e2a3f154c8badd003930d3d28870a9964152300f499f76c9a1fbeefbcc11",
+    "author-img": "https://img.freepik.com/premium-photo/muslim-praying-medina-mosque_21730-1187.jpg?w=996",
+    "images": "",
+    "read-time": 8,
+    "publish-date": "11/5/22"
+  },
+  {
+    "id": 5,
+    "author-name": "Furkan Ahammed",
+    "title": "How to get your first job as a self-taught programmer",
+    "cover-img": "https://img.freepik.com/free-photo/data-technology-blue-background-with-hacker-remixed-media_53876-108534.jpg?w=996&t=st=1680195913~exp=1680196513~hmac=e7e22614127e5c305a4a41fd4a15111b7c062c558eac42b49f2e4460068f91d8",
+    "author-img": "https://img.freepik.com/free-photo/portrait-smiling-muslim-man-restaurant_23-2147794348.jpg?w=996&t=st=1680196193~exp=1680196793~hmac=237b8a5e2f67d5d508ebe34d7883fc03700a1b15733a75d9ccebc9041dcd3d2d",
+    "images": "",
+    "read-time": 5,
+    "publish-date": "12/2/22"
+  }
+]
