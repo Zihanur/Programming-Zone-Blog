@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 import "./Blog.css";
 
-const Blog = ({ blog , readTimeHandel}) => {
+const Blog = ({ blog , readTimeHandel, addBookmarkHandel}) => {
   const { id, authorName, coverImg, title, authorImg, readTime } = blog;
   return (
     <div className="single-blog">

@@ -6,17 +6,22 @@ import Sitecart from './Sitecart/Sitecart';
 const Blogs = () => {
   const [blogs,setBlogs] = useState([]);
   const [totalTime, setTotalTime] = useState(0);
+  const [titleContainer, setTitleContainer] = useState([]);
+  const [count, setCount] = useState(0);
 
   useEffect(()=>{
     fetch('knowledge.json')
     .then(res=>res.json())
     .then(data=>setBlogs(data))
   },[])
-
   
   const readTimeHandel = (readTime) =>{
     const totalReadTime = totalTime + readTime
     setTotalTime(totalReadTime);
+  }
+
+  const addBookmarkHandel = (title) =>{
+    setCount(count + 1);
   }
 
   return (
@@ -28,12 +33,15 @@ const Blogs = () => {
           key = {blog.id}
           blog = {blog} 
           readTimeHandel = {readTimeHandel}
+          addBookmarkHandel = {addBookmarkHandel}
           ></Blog>)
         }
       </div>
       <div className='col-span-2'>
-        
-        <Sitecart totalTime={totalTime}></Sitecart>
+        <Sitecart 
+          totalTime={totalTime}
+          count={count}>
+        </Sitecart>
       </div>
     </div>
   );
