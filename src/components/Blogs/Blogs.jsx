@@ -28,7 +28,7 @@ const Blogs = () => {
   }
 
   return (
-    <div className='mx-28 grid gap-x-6 sl:grid-cols-1 md:grid-cols-5'>
+    <div className='mx-5 md:mx-10 lg:mx-28 grid gap-x-6 sl:grid-cols-1 md:grid-cols-5'>
       <div className='col-span-3'>
         {
           blogs.map(blog=>
