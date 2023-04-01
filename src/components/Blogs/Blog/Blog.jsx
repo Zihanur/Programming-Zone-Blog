@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 import "./Blog.css";
 
-const Blog = ({ blog , readTimeHandel, addBookmarkHandel}) => {
+const Blog = ({ blog, readTimeHandel, addBookmarkHandel }) => {
   const { id, authorName, coverImg, title, authorImg, readTime } = blog;
   return (
     <div className="single-blog">
@@ -27,13 +27,20 @@ const Blog = ({ blog , readTimeHandel, addBookmarkHandel}) => {
         <div>
           <p className="read-length text-xl font-medium">
             {readTime} min read
-            <button onClick={()=>addBookmarkHandel(title)}  className="hover:text-neutral-800"><FontAwesomeIcon className="w-6 h-6 ms-2" icon={faBookmark} />
+            <button
+              onClick={() => addBookmarkHandel(title)}
+              className="hover:text-neutral-800"
+            >
+              <FontAwesomeIcon className="w-6 h-6 ms-2" icon={faBookmark} />
             </button>
           </p>
         </div>
       </div>
       <h2 className="font-bold	text-4xl mb-4">{title}</h2>
-      <button className="font-semibold	text-xl	text-blue-600 underline mb-9 pointer-events-auto hover:text-orange-300 " onClick={()=>readTimeHandel(readTime)}>
+      <button
+        className="font-semibold	text-xl	text-blue-600 underline mb-9 pointer-events-auto hover:text-orange-300 "
+        onClick={() => readTimeHandel(readTime)}
+      >
         Mark as read
       </button>
       <hr className="hr mb-10" />
