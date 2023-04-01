@@ -4,7 +4,10 @@ import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 import "./Blog.css";
 
 const Blog = ({ blog, readTimeHandel, addBookmarkHandel }) => {
+
+  //destructuring
   const { id, authorName, coverImg, title, authorImg, readTime } = blog;
+  
   return (
     <div className="single-blog">
       <img className="w-full h-96 rounded-lg" src={coverImg} alt="" />

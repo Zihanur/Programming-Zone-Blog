@@ -31,6 +31,7 @@ const Blogs = () => {
     //title check match or not matck
     const titleMatch = titleTotal.find(item=>item==title)
     console.log(titleMatch)
+    //toast success and warning
     if (titleMatch) {
       setTitleTotal(newTitleTotal);
       toast.warning("Warning, Already added"); 
@@ -69,100 +70,59 @@ const Blogs = () => {
         <div className="collapse">
           <input type="checkbox" className="peer" />
           <div className="collapse-title bg-primary text-2xl text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
-            Props vs state
+            1. Props vs state
+          </div>
+          <div className="collapse-content bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
+            <div className="text-xl">
+              In the React, Props and State are use for data pass one component to other components.
+              <p>Props: Props can get initial value from parent component. Data change by parent component. Can set default value inside the component. Can't change data in the child component.</p>
+              <p>State: State can get initial value from parent component. Can't data change by parent component. Can set default value inside the component. Can't change data in the child component.</p>
+            </div>
+          </div>
+        </div>
+        <div className="collapse">
+          <input type="checkbox" className="peer" />
+          <div className="collapse-title bg-primary text-2xl text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
+            2. How does useState work?
           </div>
           <div className="collapse-content bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
             <p className="text-xl">
-              In web development, props and state are both ways to manage data
-              in a React component. Props, short for properties, are data that
-              are passed down from a parent component to a child component as
-              read-only values. They are used to customize or configure a
-              component, and once passed, cannot be modified by the child
-              component. State, on the other hand, is a way to store and manage
-              data within a component. It is used to keep track of changes in a
-              component's data over time, and can be updated by the component
-              itself through the use of setState method. When state data
-              changes, React will re-render the component with the updated data.
-              In general, props are used to pass data from a parent component to
-              a child component, while state is used to manage data within a
-              component itself. However, the line between props and state can
-              sometimes be blurry, and it ultimately depends on the specific use
-              case of the component.
+              UseState: useState is a react hook and normaly a variable. It's contain present condition in the component. UseState set value and change the value in the function. Look like:
+              const [value, setValue] = useState(0); Here, "value" is a variable and her value is define 0. "setValue" is a function that change the value 0 to somethings.
             </p>
           </div>
         </div>
         <div className="collapse">
           <input type="checkbox" className="peer" />
           <div className="collapse-title bg-primary text-2xl text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
-            How does useState work?
+          3. Purpose of useEffect other than fetching data.
           </div>
           <div className="collapse-content bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
-            <p className="text-xl">
-              In React, useState is a hook that allows a functional component to
-              manage state. The useState hook is imported from the 'react'
-              module and takes an initial value as its argument, and returns an
-              array with two values: The first value is the current state value,
-              which is initialized with the initial value provided. The second
-              value is a function that can be used to update the state value. In
-              the above code, the useState hook is called with an initial value
-              of 0, which sets the initial state of the count variable to 0. The
-              setCount function is used to update the count state value whenever
-              the button is clicked. When the button is clicked, the increment
-              function is called, which calls setCount with the updated count
-              value. React then re-renders the component with the updated state
-              value, causing the count to be incremented by 1 and displayed on
-              the screen.
+          <p className="text-xl">
+              UseEffect: useEffect is a react hook. It's used for fetching data and hendle side effect. Look like:
+              useEffect(callback function,dependency); Here, "Callback function" load the data in API and other work. "Dependency" can recall the useEffect.
             </p>
           </div>
         </div>
         <div className="collapse">
           <input type="checkbox" className="peer" />
           <div className="collapse-title bg-primary text-2xl text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
-            Props vs state
+            4. How Does React work?
           </div>
           <div className="collapse-content bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
-            <p className="text-xl">
-              In web development, props and state are both ways to manage data
-              in a React component. Props, short for properties, are data that
-              are passed down from a parent component to a child component as
-              read-only values. They are used to customize or configure a
-              component, and once passed, cannot be modified by the child
-              component. State, on the other hand, is a way to store and manage
-              data within a component. It is used to keep track of changes in a
-              component's data over time, and can be updated by the component
-              itself through the use of setState method. When state data
-              changes, React will re-render the component with the updated data.
-              In general, props are used to pass data from a parent component to
-              a child component, while state is used to manage data within a
-              component itself. However, the line between props and state can
-              sometimes be blurry, and it ultimately depends on the specific use
-              case of the component.
-            </p>
-          </div>
-        </div>
-        <div className="collapse">
-          <input type="checkbox" className="peer" />
-          <div className="collapse-title bg-primary text-2xl text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
-            Props vs state
-          </div>
-          <div className="collapse-content bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
-            <p className="text-xl">
-              In web development, props and state are both ways to manage data
-              in a React component. Props, short for properties, are data that
-              are passed down from a parent component to a child component as
-              read-only values. They are used to customize or configure a
-              component, and once passed, cannot be modified by the child
-              component. State, on the other hand, is a way to store and manage
-              data within a component. It is used to keep track of changes in a
-              component's data over time, and can be updated by the component
-              itself through the use of setState method. When state data
-              changes, React will re-render the component with the updated data.
-              In general, props are used to pass data from a parent component to
-              a child component, while state is used to manage data within a
-              component itself. However, the line between props and state can
-              sometimes be blurry, and it ultimately depends on the specific use
-              case of the component.
-            </p>
+            <div className="text-xl">
+              React: React is JavaScript Library that build only for User Interface(UI). React work reassign components bassed their state and props. React work:
+              <p>
+                JavaScript XML: JSX used lool like HTML write in the JavaScript. Some rule of JSX- If write multiple element in the JSX then use "div" tag. Class name should be written like "className". Every tag should be closed.
+              </p>
+              <p>
+                Component: Components are the fundation of user interface. In the react every pices of UI is a components. Rule- Components name are should be start by capital later. Every components are return JSX.
+              </p>
+              <p>
+                Props, State: They are use for data transfer one component to others components. 
+              </p>
+              <p>Hooks: React have some hooks. Such as useEffect, useState, etc. They are alow functional components and work here.</p>
+            </div>
           </div>
         </div>
       </div>
